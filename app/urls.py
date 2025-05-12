@@ -15,6 +15,7 @@ urlpatterns = [
     path("profile/<str:username>",views.profile,name="profile"),
     path("followUnfollow/<str:username>",views.followUnfollow,name="followUnfollow"),
 
+    path("feed",views.feed,name="feed"),
     # NAVBAR
     path('article',views.article, name='article'),
     path('qna/',views.qna,name='qna'),
