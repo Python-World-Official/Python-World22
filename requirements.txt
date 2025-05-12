@@ -35,9 +35,6 @@ markdown-it-py==3.0.0
 matplotlib==3.9.2
 mdurl==0.1.2
 mongoengine==0.29.1
-mysqlclient==2.2.4
-numpy==1.26.4
-openai==1.76.2
 packaging==24.1
 pandas==2.2.2
 pefile==2023.2.7
