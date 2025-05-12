@@ -452,3 +452,9 @@ def comment_post(request, post_id):
             "username": comment.created_by.username,
             "initial": comment.created_by.username[0].upper()
         })
+
+def feed(request):
+    if "user_id" not in request.session:
+        return redirect("login")
+    
+    return redirect("post")
