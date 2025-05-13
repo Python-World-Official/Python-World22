@@ -4,7 +4,7 @@ from mongoengine import StringField,ObjectIdField,IntField,Document,ListField,Re
 from django.utils import timezone
 from datetime import date
 
-class User(AbstractBaseUser):
+class User(Document):
     username = StringField(required=True,unique=True)
     password = StringField(required=True)
     email = EmailField(required=True,unique=True)
