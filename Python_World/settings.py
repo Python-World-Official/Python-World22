@@ -21,7 +21,7 @@ connect(host=MONGO_URI)
 
 SECRET_KEY = 'django-insecure-0pfz8hbbu^%f#vj^t=n_qi^x7ymd@j-(y2e9=y2v2n+_k)(x0s'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*', '.vercel.app']
 
@@ -134,5 +134,5 @@ cloudinary.config(
   api_secret = 'g8k8t6a03lwMt3diq-Peuy3Vxl4' 
 )
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
